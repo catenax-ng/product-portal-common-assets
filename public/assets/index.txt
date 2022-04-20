@@ -6,6 +6,7 @@ apps/images/Lead-Default.png
 apps/images/Lead-Dismantler.png
 apps/images/Lead-FraudIcon.png
 apps/images/Lead-Traceability.png
+apps/images/demo-1234/lead.jpg
 index.html
 index.txt
 testdata/apps.json
