@@ -47,6 +47,17 @@ create-container() {
         -o table
 }
 
+add-cors() {
+    az storage \
+        cors add \
+        --account-name ${CX_ACCOUNT} \
+        --account-key ${CX_ACCOUNT_KEY} \
+        --origins 'https://*.demo.catena-x.net,http://localhost:3000' \
+        --methods GET \
+        --max-age 200 \
+        --services b
+}
+
 create-share() {
     az storage share create \
         --name ${1:-$CX_CONTAINER} \
@@ -100,5 +111,6 @@ deploy-assets() {
 create-index() {
     (cd public/assets && find . -type f) \
         | cut -c 3- \
+	| sort \
         > public/assets/index.txt
 }

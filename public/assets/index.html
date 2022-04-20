@@ -8,16 +8,6 @@
 html, body {
 	font-family: 'Source Code Pro', 'Consolas', 'Courier New', Courier, monospace;
 }
-tr {
-	line-height: 40px;
-}
-td {
-	border-top: 1px solid lightgray;
-}
-th, td {
-	width: 120px;
-	text-align: left;
-}
 		</style>
 	</head>
 	<body>
@@ -50,14 +40,17 @@ const N = (tag, c, att) => {
 };
 
 (async() => {
+	const filter = new URLSearchParams(location.search).get('filter')
 	const resp = await fetch('index.txt')
 	const data = await resp.text()
 	document.body.appendChild(
         N('div',
-            data.split('\n').flatMap(line => [
-                N('a', line, { href: line }),
-                N('br')
-            ])
+            data.split('\n')
+				.filter(line => !filter || line.includes(filter))
+				.flatMap(line => [
+					N('a', line, { href: line }),
+					N('br')
+				])
         )
     )
 })()
