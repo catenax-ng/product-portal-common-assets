@@ -1,3 +1,10 @@
+api/apps/active.json
+api/apps/f9cad59d-84b3-4880-a550-4072c26a6b93/details.json
+api/news/latest.json
+api/partnerNetwork/businessPartnersAPIResult.json
+api/partnerNetwork/businessPartnersDataGrid.json
+api/partnerNetwork/businessPartnersSingleDataGrid.json
+api/partnerNetwork/businessPartnersSingleResult.json
 apps/images/GEC_Logo_1C.jpg
 apps/images/GEC_smartMOM_Auftragsdetails.png
 apps/images/GEC_smartMOM_Maschinenzustaende.png
@@ -9,9 +16,3 @@ apps/images/Lead-Traceability.png
 apps/images/demo-1234/lead.jpg
 index.html
 index.txt
-testdata/apps.json
-testdata/news.json
-testdata/partnerNetwork/businessPartnersAPIResult.json
-testdata/partnerNetwork/businessPartnersDataGrid.json
-testdata/partnerNetwork/businessPartnersSingleDataGrid.json
-testdata/partnerNetwork/businessPartnersSingleResult.json
