@@ -1,8 +1,8 @@
 {
     "id": "demo",
     "title": "Digital Twin Debugger",
-    "leadPictureURI": "https://catenaxdev003util.blob.core.windows.net/assets/images/apps/demo/lead.jpg",
-    "providerURI": "",
+    "leadPictureUri": "https://catenaxdev003util.blob.core.windows.net/assets/images/apps/demo/lead.jpg",
+    "providerUri": "",
     "provider": "Catena-X",
     "contactEmail": "some.user@catena-x.net",
     "contactNumber": "+49 0123 45678",
