@@ -1,8 +1,8 @@
 # Catena-X Portal static assets
 
 Assets and test data used by the Catena-X Portal.
-This is a temporary solution building a webserver image from the repository with built in assets
-- the final solution would be to store the assets in an object store like https://min.io
+This is a temporary solution building a webserver image from the repository with built in assets -
+the final solution would be to store the assets in an object store like https://min.io
 
 
 ### Publish assets to Catena-X NG
