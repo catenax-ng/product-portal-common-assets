@@ -2,12 +2,15 @@
 # usage:
 #       export IMAGE=ghcr.io/catenax-ng/product-portal-common-assets
 #       docker build -t $IMAGE -f .conf/Dockerfile .
-#       docker run --rm -d -p 8080:8080 --name cx-portal-assets $IMAGE
+#       docker run --rm -d -p 8080:8080 --name $IMAGE $IMAGE
+#       docker exec $IMAGE find /usr/share/nginx/html/
+#       docker stop $IMAGE
+#       docker push $IMAGE
 #
 # Step 1
 FROM alpine as build-step
 COPY public /public
-WORKDIR /public
+WORKDIR /public/assets
 RUN find . -type f | cut -c 3- | sort > index.txt
 
 # Step 2
