@@ -30,3 +30,4 @@ commands (bash)
     list-blobs
     create-index
     deploy-assets
+
