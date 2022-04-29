@@ -1,0 +1,8 @@
+{
+  "message": "api commit test",
+  "author": {
+    "name": "Martin Rohrmeier",
+    "email": "martin.ra.rohrmeier@bmw.de"
+  },
+  "parents": ["53b13215ac4aea21f07351a6f273e23f411255f4"]
+}
