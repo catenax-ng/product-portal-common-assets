@@ -1,1 +1,110 @@
-[{"id":"5cf74ef8-e0b7-4984-a872-474828beb5d1","title":"Smart MOM","shortDescription":"ERROR","provider":"Catena-X","useCases":["Traceability"],"price":"ERROR","leadPictureUri":"logo-GEC.jpg"},{"id":"5cf74ef8-e0b7-4984-a872-474828beb5d2","title":"DTC-Translator","shortDescription":"ERROR","provider":"Catena-X","useCases":["None"],"price":"ERROR","leadPictureUri":"DTC-Translator_LP.svg"},{"id":"5cf74ef8-e0b7-4984-a872-474828beb5d3","title":"Fleet Manager","shortDescription":"ERROR","provider":"Catena-X","useCases":["None"],"price":"ERROR","leadPictureUri":"Fleet_Manager_LP.png"},{"id":"5cf74ef8-e0b7-4984-a872-474828beb5d8","title":"Test MultiApp","shortDescription":"ERROR","provider":"Catena-X","useCases":["Traceability","Demand and Capacity Management"],"price":"free of charge","leadPictureUri":"ERROR"},{"id":"8488044e-b8df-403a-9cbd-16dad7e4a08c","title":"Covanto - AFQM","shortDescription":"ERROR","provider":"BOSCH","useCases":["Demand and Capacity Management"],"price":"free of charge","leadPictureUri":"ERROR"},{"id":"ac1cf001-7fbc-1f2f-817f-bce0572c0007","title":"Part Chain","shortDescription":"ERROR","provider":"Bayerische Motorenwerke AG","useCases":["Traceability"],"price":"free of charge","leadPictureUri":"ERROR"},{"id":"ac1cf001-7fbc-1f2f-817f-bce0573f0009","title":"Dismantler App","shortDescription":"ERROR","provider":"SAP AG","useCases":["Circular Economy"],"price":"free of charge","leadPictureUri":"ERROR"},{"id":"ac1cf001-7fbc-1f2f-817f-bce05744000b","title":"CE Marketplace","shortDescription":"ERROR","provider":"SAP AG","useCases":["Circular Economy"],"price":"free of charge","leadPictureUri":"CE_Marketplace_LP.png"},{"id":"ac1cf001-7fbc-1f2f-817f-bce05748000d","title":"Material Traceability","shortDescription":"ERROR","provider":"Catena-X","useCases":["Traceability"],"price":"free of charge","leadPictureUri":"ERROR"},{"id":"ac1cf001-7fbc-1f2f-817f-bce0574c000f","title":"Component Performance","shortDescription":"ERROR","provider":"Bayerische Motorenwerke AG","useCases":["Demand and Capacity Management"],"price":"free of charge","leadPictureUri":"ERROR"},{"id":"f9cad59d-84b3-4880-a550-4072c26a6b93","title":"Fraud Dashboard","shortDescription":"ERROR","provider":"Catena-X","useCases":["Business Partner Management"],"price":"free of charge","leadPictureUri":"ERROR"},{"id":"f9cad59d-84b3-4880-a550-4072c26a6b94","title":"Fraud Reporter","shortDescription":"ERROR","provider":"Catena-X","useCases":["Business Partner Management"],"price":"ERROR","leadPictureUri":"ERROR"}]
+[
+  {
+    "id": "5cf74ef8-e0b7-4984-a872-474828beb5d1",
+    "title": "Smart MOM",
+    "shortDescription": "ERROR",
+    "provider": "Catena-X",
+    "useCases": ["Traceability"],
+    "price": "ERROR",
+    "leadPictureUri": "logo-GEC.jpg"
+  },
+  {
+    "id": "5cf74ef8-e0b7-4984-a872-474828beb5d2",
+    "title": "DTC-Translator",
+    "shortDescription": "ERROR",
+    "provider": "Catena-X",
+    "useCases": ["None"],
+    "price": "ERROR",
+    "leadPictureUri": "DTC-Translator_LP.svg"
+  },
+  {
+    "id": "5cf74ef8-e0b7-4984-a872-474828beb5d3",
+    "title": "Fleet Manager",
+    "shortDescription": "ERROR",
+    "provider": "Catena-X",
+    "useCases": ["None"],
+    "price": "ERROR",
+    "leadPictureUri": "Fleet_Manager_LP.png"
+  },
+  {
+    "id": "5cf74ef8-e0b7-4984-a872-474828beb5d8",
+    "title": "Test MultiApp",
+    "shortDescription": "ERROR",
+    "provider": "Catena-X",
+    "useCases": ["Traceability", "Demand and Capacity Management"],
+    "price": "free of charge",
+    "leadPictureUri": "ERROR"
+  },
+  {
+    "id": "8488044e-b8df-403a-9cbd-16dad7e4a08c",
+    "title": "Covanto - AFQM",
+    "shortDescription": "ERROR",
+    "provider": "BOSCH",
+    "useCases": ["Demand and Capacity Management"],
+    "price": "free of charge",
+    "leadPictureUri": "ERROR"
+  },
+  {
+    "id": "ac1cf001-7fbc-1f2f-817f-bce0572c0007",
+    "title": "Part Chain",
+    "shortDescription": "ERROR",
+    "provider": "Bayerische Motorenwerke AG",
+    "useCases": ["Traceability"],
+    "price": "free of charge",
+    "leadPictureUri": "ERROR"
+  },
+  {
+    "id": "ac1cf001-7fbc-1f2f-817f-bce0573f0009",
+    "title": "Dismantler App",
+    "shortDescription": "ERROR",
+    "provider": "SAP AG",
+    "useCases": ["Circular Economy"],
+    "price": "free of charge",
+    "leadPictureUri": "ERROR"
+  },
+  {
+    "id": "ac1cf001-7fbc-1f2f-817f-bce05744000b",
+    "title": "CE Marketplace",
+    "shortDescription": "ERROR",
+    "provider": "SAP AG",
+    "useCases": ["Circular Economy"],
+    "price": "free of charge",
+    "leadPictureUri": "CE_Marketplace_LP.png"
+  },
+  {
+    "id": "ac1cf001-7fbc-1f2f-817f-bce05748000d",
+    "title": "Material Traceability",
+    "shortDescription": "ERROR",
+    "provider": "Catena-X",
+    "useCases": ["Traceability"],
+    "price": "free of charge",
+    "leadPictureUri": "ERROR"
+  },
+  {
+    "id": "ac1cf001-7fbc-1f2f-817f-bce0574c000f",
+    "title": "Component Performance",
+    "shortDescription": "ERROR",
+    "provider": "Bayerische Motorenwerke AG",
+    "useCases": ["Demand and Capacity Management"],
+    "price": "free of charge",
+    "leadPictureUri": "ERROR"
+  },
+  {
+    "id": "f9cad59d-84b3-4880-a550-4072c26a6b93",
+    "title": "Fraud Dashboard",
+    "shortDescription": "ERROR",
+    "provider": "Catena-X",
+    "useCases": ["Business Partner Management"],
+    "price": "free of charge",
+    "leadPictureUri": "ERROR"
+  },
+  {
+    "id": "f9cad59d-84b3-4880-a550-4072c26a6b94",
+    "title": "Fraud Reporter",
+    "shortDescription": "ERROR",
+    "provider": "Catena-X",
+    "useCases": ["Business Partner Management"],
+    "price": "ERROR",
+    "leadPictureUri": "ERROR"
+  }
+]
