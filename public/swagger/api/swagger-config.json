@@ -1,0 +1,27 @@
+{
+  "configUrl": "/swagger/api/swagger-config",
+  "oauth2RedirectUrl": "https://portal.dev.demo.catena-x.net/swagger/oauth2-redirect.html",
+  "urls": [
+    {
+      "url": "/swagger/api/provisioning.json",
+      "name": "Provisioning API"
+    },
+    {
+      "url": "/swagger/api/registration.json",
+      "name": "Registration API"
+    },
+    {
+      "url": "/swagger/api/administration.json",
+      "name": "Administration API"
+    },
+    {
+      "url": "/swagger/api/app-marketplace.json",
+      "name": "App Marketplace API"
+    },
+    {
+      "url": "/swagger/api/aas-registry.yaml",
+      "name": "AAS Registry API"
+    }
+  ],
+  "validatorUrl": ""
+}

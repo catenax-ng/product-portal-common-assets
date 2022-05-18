@@ -1,0 +1,18 @@
+{
+  "name": "product-portal-common-assets",
+  "version": "0.4.1",
+  "description": "Catena-X Portal Frontend Common Assets",
+  "main": "index.js",
+  "repository": "https://github.com/catenax-ng/product-portal-common-assets.git",
+  "license": "Apache-2.0",
+  "private": false,
+  "scripts": {
+    "start": "http-server -p 3000"
+  },
+  "dependencies": {
+    "swagger-ui-dist": "^4.11.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  }
+}
