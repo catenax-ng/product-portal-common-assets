@@ -3,25 +3,38 @@
   "oauth2RedirectUrl": "https://portal.dev.demo.catena-x.net/swagger/oauth2-redirect.html",
   "urls": [
     {
-      "name": "Provisioning API",
+      "name": "Portal Provisioning API",
       "url": "https://portal-backend.dev.demo.catena-x.net/api/provisioning/swagger/v2/swagger.json"
     },
     {
-      "name": "Registration API",
+      "name": "Portal Registration API",
       "url": "https://portal-backend.dev.demo.catena-x.net/api/registration/swagger/v2/swagger.json"
     },
     {
-      "name": "Administration API",
+      "name": "Portal Administration API",
       "url": "https://portal-backend.dev.demo.catena-x.net/api/administration/swagger/v2/swagger.json"
     },
     {
-      "name": "App Marketplace API",
+      "name": "Portal App Marketplace API",
       "url": "https://portal-backend.dev.demo.catena-x.net/api/apps/swagger/v2/swagger.json"
     },
     {
-      "name": "AAS Registry API",
-      "url": "/swagger/api/aas-registry.yaml"
+      "name": "Business Partner Data Management API",
+      "url": "https://catenax-bpdm-dev.germanywestcentral.cloudapp.azure.com/v3/api-docs"
+    },
+    {
+      "name": "Digital Twin Registry API",
+      "url": "https://catenaxintakssrv.germanywestcentral.cloudapp.azure.com/semantics/twin-registry/aas-registry-openapi.yaml"
+    },
+    {
+      "name": "Semantic Hub API",
+      "url": "https://catenaxintakssrv.germanywestcentral.cloudapp.azure.com/semantics/hub/semantic-hub-openapi.yaml"
+    },
+    {
+      "name": "IRS API",
+      "url": "http://irs.int.demo.catena-x.net/api/api-docs"
     }
+    
   ],
   "validatorUrl": ""
 }
