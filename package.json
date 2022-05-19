@@ -1,12 +1,15 @@
 {
   "name": "product-portal-common-assets",
   "version": "0.4.1",
+  "license": "Apache-2.0",
   "description": "Catena-X Portal Frontend Common Assets",
   "main": "index.js",
   "repository": "https://github.com/catenax-ng/product-portal-common-assets.git",
-  "license": "Apache-2.0",
   "private": false,
   "scripts": {
+    "build:docker": "IMAGE=ghcr.io/catenax-ng/$npm_package_name && docker build -t $IMAGE -f .conf/Dockerfile .",
+    "start:docker": "IMAGE=ghcr.io/catenax-ng/$npm_package_name && docker run --rm -d -p 8080:8080 --name cx-portal-assets $IMAGE",
+    "stop:docker": "docker stop cx-portal-assets",
     "start": "http-server -p 3000"
   },
   "dependencies": {

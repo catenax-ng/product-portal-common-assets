@@ -110,7 +110,7 @@ deploy-assets() {
 
 create-index() {
     (cd public/assets && find . -type f) \
-        | cut -c 3- \
-	| sort \
-        > public/assets/index.txt
+    | cut -c 3- \
+    | sort \
+    > public/assets/index.txt
 }
