@@ -13,9 +13,13 @@ window.onload = function() {
     plugins: [
       SwaggerUIBundle.plugins.DownloadUrl
     ],
-    layout: "StandaloneLayout",
-    configUrl: "/swagger/api/swagger-config.json",
-    //validatorUrl: ""
+    layout: 'StandaloneLayout',
+    configUrl: '/swagger/api/swagger-config.json',
+    requestInterceptor: (req) => {
+      req.headers.Authorization = `Bearer ${keycloak.token}`
+      return req
+    }
+      //validatorUrl: ""
   });
   window.ui.initOAuth({
     "clientId":"catenax-portal",

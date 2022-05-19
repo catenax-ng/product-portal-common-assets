@@ -1,4 +1,3 @@
-<!-- HTML for static distribution bundle build -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,6 +10,31 @@
   </head>
 
   <body>
+    <script src="https://catenaxdev003akssrv.germanywestcentral.cloudapp.azure.com/iamcentralidp/auth/js/keycloak.js"></script>
+    <script>
+const keycloak = Keycloak({
+  url: 'https://catenaxdev003akssrv.germanywestcentral.cloudapp.azure.com/iamcentralidp/auth/',
+  realm: 'CX-Central',
+  clientId: 'catenax-portal',
+})
+keycloak.init({ onLoad: 'login-required' })
+  .then(function (authenticated) {
+    console.log(`${keycloak.tokenParsed.name} signed in`)
+  }).catch(function () {
+    console.log(`${keycloak.tokenParsed.name} sign in failed`)
+    window.location.reload()
+  }
+)
+keycloak.onTokenExpired = () => {
+  keycloak.updateToken(50)
+    .then((refreshed) => {
+      console.log(`${keycloak.tokenParsed.name} refreshed ${refreshed}`)
+    })
+    .catch(() => {
+      error(`${keycloak.tokenParsed.name} refresh failed`)
+    })
+}
+    </script>
     <div id="swagger-ui"></div>
     <script src="./swagger-ui-bundle.js" charset="UTF-8"> </script>
     <script src="./swagger-ui-standalone-preset.js" charset="UTF-8"> </script>

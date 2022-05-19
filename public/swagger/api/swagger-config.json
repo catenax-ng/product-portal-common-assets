@@ -3,24 +3,24 @@
   "oauth2RedirectUrl": "https://portal.dev.demo.catena-x.net/swagger/oauth2-redirect.html",
   "urls": [
     {
-      "url": "/swagger/api/provisioning.json",
-      "name": "Provisioning API"
+      "name": "Provisioning API",
+      "url": "https://portal-backend.dev.demo.catena-x.net/api/provisioning/swagger/v2/swagger.json"
     },
     {
-      "url": "/swagger/api/registration.json",
-      "name": "Registration API"
+      "name": "Registration API",
+      "url": "https://portal-backend.dev.demo.catena-x.net/api/registration/swagger/v2/swagger.json"
     },
     {
-      "url": "/swagger/api/administration.json",
-      "name": "Administration API"
+      "name": "Administration API",
+      "url": "https://portal-backend.dev.demo.catena-x.net/api/administration/swagger/v2/swagger.json"
     },
     {
-      "url": "/swagger/api/app-marketplace.json",
-      "name": "App Marketplace API"
+      "name": "App Marketplace API",
+      "url": "https://portal-backend.dev.demo.catena-x.net/api/apps/swagger/v2/swagger.json"
     },
     {
-      "url": "/swagger/api/aas-registry.yaml",
-      "name": "AAS Registry API"
+      "name": "AAS Registry API",
+      "url": "/swagger/api/aas-registry.yaml"
     }
   ],
   "validatorUrl": ""
