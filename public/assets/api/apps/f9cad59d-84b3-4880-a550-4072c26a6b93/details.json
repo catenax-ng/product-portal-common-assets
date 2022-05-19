@@ -1,7 +1,7 @@
 {
     "id": "f9cad59d-84b3-4880-a550-4072c26a6b93",
     "title": "Fraud Dashboard",
-    "leadPictureURI": "https://catenaxdev003util.blob.core.windows.net/assets/apps/images/demo-1234/lead.jpg",
+    "leadPictureURI": "lead.jpg",
     "providerURI": "",
     "provider": "Catena-X",
     "contactEmail": "some.user@catena-x.net",

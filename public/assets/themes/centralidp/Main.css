@@ -7,7 +7,7 @@ html, body {
     padding: 0;
     max-width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(https://catenaxdev003util.blob.core.windows.net/util/themes/catenax-central/static/img/background.svg);
+    background-image: url(https://portal.dev.demo.catena-x.net/assets/images/frame/background.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 400px;
@@ -28,7 +28,7 @@ html, body {
 .logo {
     width: 100%;
     height: 200px;
-    background-image: url(https://catenax-dev003-app-onboarding.azurewebsites.net/logo_cx.svg);
+    background-image: url(https://portal.dev.demo.catena-x.net/assets/images/logos/cx.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 320px 200px;
@@ -95,7 +95,7 @@ ul>li>a:hover {
 }
 
 
-a { background-image: url(https://catenaxdev003util.blob.core.windows.net/util/themes/catenax-central/static/icon/icon-wrench.svg); background-size: 70px 70px; }
+a { background-image: url(https://portal.dev.demo.catena-x.net/assets/images/icons/wrench.svg); background-size: 70px 70px; }
 
 
 a.allsafe-jungfalk { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/allsafe-jungfalk-logo_grey.png) }
@@ -115,8 +115,7 @@ a.cct { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/f
 a.cdq { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/cdq_ag_grey.png) }
 a.circulor { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/circulor_gmbh_grey.png) }
 a.circunomics { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/circunomics_gmbh_grey.png) }
-a.xcx_test_access { background-image: url(https://catenaxdev003util.blob.core.windows.net/util/themes/catenax-central/static/icon/icon-test.svg); background-size: 70px 70px; }
-a.cx_test_access { background-image: url(https://catenaxdev003util.blob.core.windows.net/util/themes/catenax-central/static/icon/cx-logo-gray.svg); background-size: 70px 70px; }
+a.cx_test_access { background-image: url(https://portal.dev.demo.catena-x.net/assets/images/logos/cx-gray.svg); background-size: 70px 70px; }
 a.dccs { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/dccs_gmbh_grey.png) }
 a.deloitte { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/deloitte_gmbh_wirtschaftspruefungsgesellschaft_grey.png) }
 a.t-systems { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/final/grey/t-systems_grau.png) }
@@ -125,7 +124,7 @@ a.draexlmaier { background-image: url(https://catena-x.net/fileadmin/user_upload
 a.fetchai { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/final/grey/fetchai_grau_2.png) }
 a.fraunhofer { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/final/grey/fraunhofer_grau.png) }
 a.gec { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/gec_logo_grey.png) }
-a.github { background-image: url(https://catenaxdev003util.blob.core.windows.net/util/themes/catenax-central/static/icon/logo-github.svg); background-size: 140px 50px; }
+a.github { background-image: url(https://portal.dev.demo.catena-x.net/assets/images/logos/github.svg); background-size: 140px 50px; }
 a.gris { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/final/grey/gris_grau.png) }
 a.hanselmann { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/hanselmann___compagnie_gmbh_grey.jpg) }
 a.henkel { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/final/grey/henkel_grau.png) }

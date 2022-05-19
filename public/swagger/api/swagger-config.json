@@ -1,6 +1,6 @@
 {
   "configUrl": "/swagger/api/swagger-config",
-  "oauth2RedirectUrl": "http://localhost:3000/swagger/oauth2-redirect.html",
+  "oauth2RedirectUrl": "https://portal.dev.demo.catena-x.net/swagger/oauth2-redirect.html",
   "urls": [
     {
       "url": "/swagger/api/provisioning.json",
