@@ -12,7 +12,7 @@
   <body>
     <script src="https://centralidp.demo.catena-x.net/auth/js/keycloak.js"></script>
     <script>
-const params = new URLSearchParams(paramsString)
+const params = new URLSearchParams(location.search)
 const keycloak = Keycloak({
   url: params.get('idp') || 'https://catenaxdev003akssrv.germanywestcentral.cloudapp.azure.com/iamcentralidp/auth/',
   realm: params.get('realm') || 'CX-Central',
