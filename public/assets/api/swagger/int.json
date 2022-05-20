@@ -1,26 +1,26 @@
 {
   "configUrl": "/swagger/api/swagger-config",
-  "oauth2RedirectUrl": "https://portal.dev.demo.catena-x.net/swagger/oauth2-redirect.html",
+  "oauth2RedirectUrl": "https://portal.int.demo.catena-x.net/swagger/oauth2-redirect.html",
   "urls": [
     {
       "name": "Portal Provisioning API",
-      "url": "https://portal-backend.dev.demo.catena-x.net/api/provisioning/swagger/v2/swagger.json"
+      "url": "https://portal-backend.int.demo.catena-x.net/api/provisioning/swagger/v2/swagger.json"
     },
     {
       "name": "Portal Registration API",
-      "url": "https://portal-backend.dev.demo.catena-x.net/api/registration/swagger/v2/swagger.json"
+      "url": "https://portal-backend.int.demo.catena-x.net/api/registration/swagger/v2/swagger.json"
     },
     {
       "name": "Portal Administration API",
-      "url": "https://portal-backend.dev.demo.catena-x.net/api/administration/swagger/v2/swagger.json"
+      "url": "https://portal-backend.int.demo.catena-x.net/api/administration/swagger/v2/swagger.json"
     },
     {
       "name": "Portal App Marketplace API",
-      "url": "https://portal-backend.dev.demo.catena-x.net/api/apps/swagger/v2/swagger.json"
+      "url": "https://portal-backend.int.demo.catena-x.net/api/apps/swagger/v2/swagger.json"
     },
     {
       "name": "Business Partner Data Management API",
-      "url": "https://catenax-bpdm-dev.germanywestcentral.cloudapp.azure.com/v3/api-docs"
+      "url": "https://catenax-bpdm-int.demo.catena-x.net/v3/api-docs"
     },
     {
       "name": "Digital Twin Registry API",
@@ -34,7 +34,6 @@
       "name": "IRS API",
       "url": "http://irs.int.demo.catena-x.net/api/api-docs"
     }
-    
   ],
   "validatorUrl": ""
 }

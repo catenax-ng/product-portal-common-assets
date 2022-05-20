@@ -14,12 +14,14 @@ window.onload = function() {
       SwaggerUIBundle.plugins.DownloadUrl
     ],
     layout: 'StandaloneLayout',
-    configUrl: '/swagger/api/swagger-config.json',
+    configUrl: location.hostname === 'portal.int.demo.catena-x.net'
+      ? `https://portal.int.demo.catena-x.net/assets/api/swagger/int.json`
+      : `https://portal.dev.demo.catena-x.net/assets/api/swagger/dev.json`,
     requestInterceptor: (req) => {
       req.headers.Authorization = `Bearer ${keycloak.token}`
       return req
-    }
-      //validatorUrl: ""
+    },
+    //validatorUrl: ""
   });
   window.ui.initOAuth({
     "clientId":"catenax-portal",
