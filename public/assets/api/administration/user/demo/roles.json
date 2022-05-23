@@ -1,0 +1,6 @@
+[
+  { "name": "Admin", "description": "The Admin can do everything" },
+  { "name": "User", "description": "The User can view cars" },
+  { "name": "Editor", "description": "The Editor can edit cars" },
+  { "name": "Purchaser", "description": "The Purchaser can purchase cars" }
+]
