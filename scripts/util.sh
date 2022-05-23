@@ -108,6 +108,17 @@ deploy-assets() {
         -o table
 }
 
+deploy-theme() {
+    az storage blob upload-batch \
+        --account-name ${CX_ACCOUNT} \
+        --account-key ${CX_ACCOUNT_KEY} \
+        --destination util \
+        --destination-path /themes/catenax-central/static \
+        --source ./public/assets/themes/centralidp \
+        --overwrite \
+        -o table
+}
+
 create-index() {
     (cd public/assets && find . -type f) \
     | cut -c 3- \
