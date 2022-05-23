@@ -1,0 +1,18 @@
+[
+  {
+    "userEntityId": "1c6bb65e-5430-403b-8363-8e05b3eeeb46",
+    "companyUserId": "ac1cf001-7fbc-1f2f-817f-bce058020000",
+    "status": "ACTIVE",
+    "firstName": "Test User",
+    "lastName": "CX User",
+    "email": "julia.jeroch@bmw.de"
+  },
+  {
+    "userEntityId": "2b89bee9-49b6-4296-bd8c-f5637034ed47",
+    "companyUserId": "ac1cf001-7fbc-1f2f-817f-bce058020001",
+    "status": "ACTIVE",
+    "firstName": "Test User",
+    "lastName": "CX Admin",
+    "email": "julia.jeroch@bmw.de"
+  }
+]
