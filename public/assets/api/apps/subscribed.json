@@ -1,6 +1,6 @@
 [
   {
-    "id": "0000-0000-0000-0000",
+    "id": "0000-0000-0000-0001",
     "title": "Fraud Prevention Report",
     "provider": "Catena-X",
     "leadPictureUri": "https://portal.dev.demo.catena-x.net/assets/images/samples/s004.jpg",
@@ -10,7 +10,7 @@
     "link": "https://apps.cdq.com/signin/00c9f5bf?redirectUri=https://apps.cdq.com/dashboard/fraud/report-fraud"
   },
   {
-    "id": "0000-0000-0000-0000",
+    "id": "0000-0000-0000-0002",
     "title": "Dismantler App",
     "provider": "SAP",
     "leadPictureUri": "https://portal.dev.demo.catena-x.net/assets/images/samples/s009.jpg",
@@ -30,7 +30,7 @@
     "link": "https://fleet-management.adac.openresearch.com"
   },
   {
-    "id": "0000-0000-0000-0000",
+    "id": "0000-0000-0000-0003",
     "title": "Fraud Dashboard",
     "provider": "Catena-X",
     "leadPictureUri": "https://portal.dev.demo.catena-x.net/assets/images/samples/s008.jpg",
@@ -40,7 +40,7 @@
     "link": "https://dash.catenax-cdq.com/"
   },
   {
-    "id": "0000-0000-0000-0000",
+    "id": "0000-0000-0000-0004",
     "title": "Covanto - AFQM",
     "provider": "BOSCH",
     "leadPictureUri": "https://portal.dev.demo.catena-x.net/assets/images/samples/s001.jpg",

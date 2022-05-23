@@ -1,6 +1,6 @@
 [
   {
-    "id": "0000-0000-0000-0000",
+    "id": "0000-0000-0000-0001",
     "title": "Smart MOM",
     "provider": "Catena-X",
     "leadPictureUri": "https://portal.dev.demo.catena-x.net/assets/images/samples/s001.jpg",
@@ -9,7 +9,7 @@
     "shortDescription": ""
   },
   {
-    "id": "0000-0000-0000-0000",
+    "id": "0000-0000-0000-0002",
     "title": "BPDM - Manage Customers",
     "provider": "ASP",
     "leadPictureUri": "https://portal.dev.demo.catena-x.net/assets/images/samples/s002.jpg",
@@ -18,7 +18,7 @@
     "shortDescription": ""
   },
   {
-    "id": "0000-0000-0000-0000",
+    "id": "0000-0000-0000-0003",
     "title": "Material Traceability",
     "provider": "Tracy",
     "leadPictureUri": "https://portal.dev.demo.catena-x.net/assets/images/samples/s003.jpg",
@@ -27,7 +27,7 @@
     "shortDescription": ""
   },
   {
-    "id": "0000-0000-0000-0000",
+    "id": "0000-0000-0000-0004",
     "title": "Fraud Dashboard",
     "provider": "Catena-X",
     "leadPictureUri": "https://portal.dev.demo.catena-x.net/assets/images/samples/s004.jpg",
