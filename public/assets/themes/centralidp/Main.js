@@ -104,12 +104,12 @@ class SelectProvider extends Viewable {
     this.view.appendChild(N('ul', this.providers.filter(n => n.name.match(regex)).map(p =>
       N('li',
         addEvents(
-          N('a', p.name.replace(/_/g, ' '), {
+          N('a', p.name, {
             href: p.url.match(/^https?:\/\//) ? p.url : `${location.origin}${p.url}`,
             class: p.alias.replace(/-/g, '_')
           }),
           {
-            "click": () => { localStorage.setItem('IDP', p.name.replace(/_/g, ' ')) }
+            "click": () => { localStorage.setItem('IDP', p.name) }
           }
         )
       ),
@@ -145,10 +145,11 @@ class Main extends Viewable {
     return this
   }
 
+  /*
   style() {
     document.body.appendChild(
       N('link', null, {
-        href: 'https://portal.dev.demo.catena-x.net/assets/fonts/LibreFranklin-VariableFont_wght.ttf',
+        href: 'https://catenaxdev003util.blob.core.windows.net/util/themes/catenax-central/static/LibreFranklin-VariableFont_wght.79b6e141.ttf',
         rel: 'preload',
         as: 'font',
         type: 'font/woff2',
@@ -156,6 +157,7 @@ class Main extends Viewable {
       })
     )
   }
+  */
 }
 
 const Selector = new SelectProvider(CX_PROVIDERS)
