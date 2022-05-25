@@ -23,12 +23,12 @@
       "url": "https://catenax-bpdm-dev.germanywestcentral.cloudapp.azure.com/v3/api-docs"
     },
     {
-      "name": "Digital Twin Registry API",
-      "url": "https://catenaxdevakssrv.germanywestcentral.cloudapp.azure.com/semantics/twin-registry/aas-registry-openapi.yaml"
+      "name": "AAS Registry API",
+      "url": "https://semantics.dev.demo.catena-x.net/registry/aas-registry-openapi.yaml"
     },
     {
-      "name": "Semantic Hub API",
-      "url": "https://catenaxdevakssrv.germanywestcentral.cloudapp.azure.com/semantics/hub/semantic-hub-openapi.yaml"
+      "name": "SemanticHub API",
+      "url": "https://semantics.dev.demo.catena-x.net/hub/semantic-hub-openapi.yaml"
     },
     {
       "name": "IRS API",
