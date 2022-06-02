@@ -10,13 +10,13 @@
   </head>
 
   <body>
-    <script src="https://centralidp.demo.catena-x.net/auth/js/keycloak.js"></script>
+    <script src="https://centralidp.dev.demo.catena-x.net/auth/js/keycloak.js"></script>
     <script>
 const params = new URLSearchParams(location.search)
 const keycloak = Keycloak({
-  url: params.get('idp') || 'https://catenaxdev003akssrv.germanywestcentral.cloudapp.azure.com/iamcentralidp/auth/',
+  url: params.get('idp') || 'https://centralidp.dev.demo.catena-x.net/auth/',
   realm: params.get('realm') || 'CX-Central',
-  clientId: params.get('client') || 'catenax-portal',
+  clientId: params.get('client') || 'Cl2-CX-Portal',
 })
 keycloak.init({ onLoad: 'login-required' })
   .then(function (authenticated) {
