@@ -11,9 +11,9 @@
   },
   {
     "id": "0000-0000-0000-0002",
-    "title": "Dismantler App",
+    "title": "Dismantler Cockpit",
     "provider": "SAP",
-    "leadPictureUri": "https://portal.dev.demo.catena-x.net/assets/images/samples/s009.jpg",
+    "leadPictureUri": "https://portal.dev.demo.catena-x.net/assets/images/apps/ac1cf001-7fbc-1f2f-817f-bce0573f0009/CE_Marketplace_LP.png",
     "rating": 4.5,
     "price": "free to use",
     "shortDescription": "Quick and transparent overview of reusable car components.",
