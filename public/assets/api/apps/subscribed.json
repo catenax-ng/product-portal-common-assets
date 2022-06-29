@@ -10,6 +10,16 @@
     "link": "https://apps.cdq.com/signin/00c9f5bf?redirectUri=https://apps.cdq.com/dashboard/fraud/report-fraud"
   },
   {
+    "id": "ac1cf001-7fbc-1f2f-817f-bce05744000b",
+    "title": "Project Implementation: Earth Commerce",
+    "provider": "SAP",
+    "leadPictureUri": "https://portal.dev.demo.catena-x.net/assets/images/samples/s008.jpg",
+    "rating": 4.5,
+    "price": "free to use",
+    "shortDescription": "Secondary Marketplace",
+    "link": "https://ec-qas.d13fe27.kyma.ondemand.com"
+  },
+  {
     "id": "0000-0000-0000-0002",
     "title": "Dismantler Cockpit",
     "provider": "SAP",
