@@ -111,7 +111,7 @@ a.cct { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/f
 a.cdq { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/cdq_ag_grey.png) }
 a.circulor { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/circulor_gmbh_grey.png) }
 a.circunomics { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/circunomics_gmbh_grey.png) }
-a.cx_test_access { background-image: url(https://portal.dev.demo.catena-x.net/assets/images/logos/cx-gray.svg); background-size: 70px 70px; }
+a.cx_test_access, a.CX_Test_Access { background-image: url(https://portal.dev.demo.catena-x.net/assets/images/logos/cx-gray.svg); background-size: 70px 70px; }
 a.dccs { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/dccs_gmbh_grey.png) }
 a.deloitte { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/deloitte_gmbh_wirtschaftspruefungsgesellschaft_grey.png) }
 a.t-systems { background-image: url(https://catena-x.net/fileadmin/user_upload/logos/final/grey/t-systems_grau.png) }
