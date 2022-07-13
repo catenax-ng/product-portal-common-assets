@@ -19,6 +19,10 @@
       "url": "https://portal-backend.dev.demo.catena-x.net/api/apps/swagger/v2/swagger.json"
     },
     {
+      "name": "Portal Notification API",
+      "url": "https://portal-backend.dev.demo.catena-x.net/api/notification/swagger/v2/swagger.json"
+    },
+    {
       "name": "Business Partner Data Management API",
       "url": "https://catenax-bpdm-dev.demo.catena-x.net/v3/api-docs"
     },
