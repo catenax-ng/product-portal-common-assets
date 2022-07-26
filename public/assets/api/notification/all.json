@@ -1,24 +1,29 @@
 [
     {
         "id": "3fa85f64-5717-4562-b3fc-2c963f660001",
+        "time": "20220726T12:34:00",
         "notificationTypeId": "Welcome"
     },
     {
         "id": "3fa85f64-5717-4562-b3fc-2c963f660002",
+        "time": "20220726T12:34:10",
         "notificationTypeId": "WelcomeAppMarketplace"
     },
     {
         "id": "3fa85f64-5717-4562-b3fc-2c963f660003",
+        "time": "20220726T14:20:00",
         "notificationTypeId": "PersonalMessage",
         "content": "{\"originator\":\"ac1cf001-7fbc-1f2f-817f-bce058020000\",\"message\":\"Hey, we should talk about some stuff. Can u call me back?\"}"
     },
     {
         "id": "3fa85f64-5717-4562-b3fc-2c963f660004",
+        "time": "20220726T14:34:00",
         "notificationTypeId": "AppRecommendation",
         "content": "{\"originator\":\"d7feb715-0d28-41c3-96b3-94e0cb25c87d\",\"appid\":\"ac1cf001-7fbc-1f2f-817f-bce05744000b\",\"message\":\"Hey, look at that app I found. Could be exactly what we need for UCX.\"}"
     },
     {
         "id": "3fa85f64-5717-4562-b3fc-2c963f660005",
+        "time": "20220726T15:02:00",
         "notificationTypeId": "PersonalMessage",
         "content": "{\"originator\":\"ac1cf001-7fbc-1f2f-817f-bce058020000\",\"message\":\"Just saw you also joined here. Let's go for a coffee :)\"}",
         "read": true
