@@ -45,7 +45,7 @@
     {
         "id": "3fa85f64-5717-4562-b3fc-2c963f660008",
         "created": "20220728T09:34:00",
-        "notificationTypeId": "AppSubscriptionRequest",
+        "notificationTypeId": "AppSubscriptionReceived",
         "creatorId": "d7feb715-0d28-41c3-96b3-94e0cb25c87d",
         "content": "{\"appId\":\"ac1cf001-7fbc-1f2f-817f-bce05744000b\",\"message\":\"Your app looks great - please We'd like to subscribe for 6 months.\"}"
     },
