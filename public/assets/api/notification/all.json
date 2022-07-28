@@ -26,7 +26,7 @@
     {
         "id": "3fa85f64-5717-4562-b3fc-2c963f660005",
         "created": "20220727T13:00:00",
-        "notificationTypeId": "AppRequest",
+        "notificationTypeId": "AppRequestSubmitted",
         "content": "{\"appId\":\"ac1cf001-7fbc-1f2f-817f-bce05744000b\"}"
     },
     {
@@ -45,9 +45,9 @@
     {
         "id": "3fa85f64-5717-4562-b3fc-2c963f660008",
         "created": "20220728T09:34:00",
-        "notificationTypeId": "AppRecommendation",
+        "notificationTypeId": "AppSubscriptionRequest",
         "creatorId": "d7feb715-0d28-41c3-96b3-94e0cb25c87d",
-        "content": "{\"appId\":\"ac1cf001-7fbc-1f2f-817f-bce05744000b\",\"message\":\"Hey, look at that app I found. Could be exactly what we need for UCX.\"}"
+        "content": "{\"appId\":\"ac1cf001-7fbc-1f2f-817f-bce05744000b\",\"message\":\"Your app looks great - please We'd like to subscribe for 6 months.\"}"
     },
     {
         "id": "3fa85f64-5717-4562-b3fc-2c963f660009",
