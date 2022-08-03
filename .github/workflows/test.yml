@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: test 
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: script test
+        run: |
+          export value1=5
+          value2=5
+          echo $value1
+          echo $value2
