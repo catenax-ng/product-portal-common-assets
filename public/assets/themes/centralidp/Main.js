@@ -157,7 +157,7 @@ class SelectProvider extends Viewable {
     clear(this.view);
 
     if (expr && !SEARCH_VALIDATION_REGEX.test(expr)) {
-      this.displayError(expr || ' ');
+      this.displayError(expr);
       return this;
     }
 
