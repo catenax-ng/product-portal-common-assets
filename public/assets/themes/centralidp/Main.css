@@ -4,10 +4,10 @@ body {
   padding: 0;
   max-width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url(https://portal.dev.demo.catena-x.net/assets/images/frame/background.svg);
+  background-image: url('../../images/frame/Home.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 400px;
+  background-position-y: 0px;
   text-align: center;
   overflow-x: hidden;
 }
@@ -16,8 +16,8 @@ body {
   box-shadow: 2px 2px 5px #f0f0f0;
 }
 
-
-.search,ul > li > a {
+.search,
+ul > li > a {
   border: 1px solid lightgray;
   border-radius: 8px;
   background-color: white;
@@ -61,26 +61,25 @@ body {
   color: #ccc;
 }
 
-.search-container{
-padding: 17px;
-background: linear-gradient(to right,#f8b500,#f88000);
-display: inline-block;
-border-radius: 35px;
+.search-container {
+  padding: 17px;
+  background: linear-gradient(to right, #f8b500, #f88000);
+  display: inline-block;
+  border-radius: 35px;
 }
 
-
 .title {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 200;
-    margin-bottom: .5rem ;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
 }
 
 .subtitle {
-    text-align: center;
-    font-size: 1.9rem;
-    font-weight: lighter;
-    margin-bottom: 3rem ;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: lighter;
+  margin-bottom: 3rem;
 }
 
 ul {
@@ -97,7 +96,6 @@ ul {
 
 ul > li > a {
   display: inline-block;
- 
   width: 160px;
   height: 80px;
   font-size: 1px;
@@ -107,41 +105,99 @@ ul > li > a {
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* 
-ul > li > a:hover {
-  font-size: 20px;
-  color: #444;
-  background-color: #f0f0f0;
-} */
 
-.idp-container {
+.error-container {
+  margin-top: 3rem;
+}
+
+.error-main {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.error-subtitle {
+  font-size: 2rem;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.error-subtitle-2 {
+  font-weight: bold;
+}
+
+.error-button {
+  padding: 0.8rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #eaf1fe;
+  cursor: pointer;
+}
+
+.error-container span {
+  color: #138dff;
 }
 
 .idp-card {
-    margin: 1rem;
+  cursor: pointer;
+  margin: 1rem;
+  transition: all 0.1s ease-out;
+  transform: scale(0.9);
+}
+
+.idp-card:hover {
+  transform: scale(1);
 }
 
 .idp-main {
-    padding: 2rem;
-    border-radius: 0px;
-    border-top-left-radius:15px ;
-    border-top-right-radius:15px ;
+  padding: 2rem;
+  border-radius: 0px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .idp-name {
-    text-align: left;
-    background-color: white;
-    margin-top: 1rem;
-    padding: 1rem;
-    border-bottom-right-radius:15px ;
-    border-bottom-left-radius:15px ;
+  text-align: left;
+  background-color: white;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
-a {
+.idp-card a {
   background-image: url(https://portal.dev.demo.catena-x.net/assets/images/icons/wrench.svg);
   background-size: 70px 70px;
 }
-/* 
+
+.footer-head {
+  background-image: url(../../images/frame/orange-background-head.svg);
+  height: 153px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-content {
+  background-image: url(../../images/frame/orange-background-full.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  box-sizing: border-box;
+}
+
+.footer-content-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 5rem;
+}
+
+.footer-links {
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+}
+
 a.allsafe-jungfalk {
   background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/allsafe-jungfalk-logo_grey.png);
 }
@@ -322,4 +378,4 @@ a.zf {
 a._23_technologies {
   background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/23_technologies_gmbh_grey.png);
   background-size: 200px 40px;
-} */
+}

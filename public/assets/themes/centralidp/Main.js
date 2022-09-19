@@ -21,6 +21,9 @@ const N = (tag, c, att) => {
   return n;
 };
 
+const SEARCH_VALIDATION_REGEX =
+  /^[a-zA-Z][a-zA-Z0-9 !#'$@&%()*+,\-_./:;=<>?[\]\\^]{0,255}$/;
+
 const remove = (n) => n.parentElement.removeChild(n);
 
 const clear = (n) => {
@@ -64,7 +67,7 @@ class SearchInput extends Viewable {
         N('input', null, {
           type: 'search',
           class: 'search',
-          placeholder: 'sign in with',
+          placeholder: 'Search for your company name',
           value: localStorage.getItem('IDP') || '',
         }),
         {
@@ -91,43 +94,129 @@ class SelectProvider extends Viewable {
     this.view = N('div');
   }
 
-  filter(expr) {
-    if (!expr || expr === '') expr = '.';
-    else expr = expr.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
-    const regex = new RegExp(expr, 'gi');
-    clear(this.view);
+  displayError(expr) {
+    this.view.appendChild(
+      N(
+        'div',
+        [
+          N('p', '0 Search results found for', { class: 'error-main' }),
+          N('p', `"${expr}"`, { class: 'error-subtitle' }),
+          N('p', 'Please check your entry for typing errors.', {
+            class: 'error-subtitle-2',
+          }),
+          addEvents(
+            N('button', [N('span', 'Show '), 'list of all companies again'], {
+              class: 'error-button',
+            }),
+            {
+              click: () => {
+                clear(this.view);
+                this.appendSearchResult(this.providers);
+              },
+            }
+          ),
+        ],
+        { class: 'error-container' }
+      )
+    );
+  }
+
+  appendSearchResult(filteredProviders) {
     this.view.appendChild(
       N(
         'ul',
-        this.providers
-          .filter((n) => n.name.match(regex))
-          .map(
-            (p) =>
-              N(
-                'li',
-                [
-                  addEvents(
-                    N('a', p.name, {
-                      href: p.url.match(/^https?:\/\//)
-                        ? p.url
-                        : `${location.origin}${p.url}`,
-                      class: 'idp-main',
-                    }),
-                    {
-                      click: () => {
-                        localStorage.setItem('IDP', p.name);
-                      },
-                    }
-                  ),
-                  N('div', p.name, { class: 'idp-name' }),
-                ],
-                { class: 'idp-card' }
-              ),
-            { class: 'idp-container' }
-          )
+        filteredProviders.map(
+          (p) =>
+            N(
+              'li',
+              [
+                addEvents(
+                  N('a', p.name, {
+                    href: p.url.match(/^https?:\/\//)
+                      ? p.url
+                      : `${location.origin}${p.url}`,
+                    class: `idp-main ${p.alias.replace(/-/g, '_')}`,
+                  }),
+                  {
+                    click: () => {
+                      localStorage.setItem('IDP', p.name);
+                    },
+                  }
+                ),
+                N('div', p.name, { class: 'idp-name' }),
+              ],
+              { class: 'idp-card' }
+            ),
+          { class: 'idp-container' }
+        )
       )
     );
+  }
+
+  filter(expr) {
+    clear(this.view);
+
+    if (expr && !SEARCH_VALIDATION_REGEX.test(expr)) {
+      this.displayError(expr || ' ');
+      return this;
+    }
+
+    const filteredProviders = this.providers.filter((n) =>
+      n.name.toLowerCase().match(expr?.toLowerCase())
+    );
+
+    if (filteredProviders.length === 0) {
+      this.displayError(expr || ' ');
+      return this;
+    }
+
+    this.appendSearchResult(filteredProviders);
+
     return this;
+  }
+}
+
+class Footer extends Viewable {
+  constructor() {
+    super();
+    this.view = N(
+      'div',
+      [
+        N('div', null, { class: 'footer-head' }),
+        N(
+          'div',
+          [
+            N(
+              'div',
+              [
+                N('a', 'Help', { class: 'footer-links', href: '/help' }),
+                N('a', 'Cookie Policy', {
+                  class: 'footer-links',
+                  href: '/cookiepolicy',
+                }),
+                N('a', 'Terms of Service', {
+                  class: 'footer-links',
+                  href: '/terms',
+                }),
+                N('a', 'Contact', { class: 'footer-links', href: '/contact' }),
+                N('a', 'Legal notes', {
+                  class: 'footer-links',
+                  href: '/thirdpartylicense',
+                }),
+              ],
+              { class: 'footer-content-links' }
+            ),
+            N('p', 'Copyright © by Catena-X Automotive Network.', {
+              class: 'footer-copyright',
+            }),
+          ],
+          {
+            class: 'footer-content',
+          }
+        ),
+      ],
+      { class: 'footer-container' }
+    );
   }
 }
 
@@ -137,11 +226,6 @@ class Main extends Viewable {
     this.setIcon();
     //this.setStyle()
     this.view = N('div', [
-      N(
-        'div',
-        "This is a test environment - please select 'CX Test Access' to log in with the provided test user.",
-        { class: 'test' }
-      ),
       N('div', null, { class: 'logo' }),
       N('div', 'Search and select', { class: 'title' }),
       N('div', 'your compnay name to login:', { class: 'subtitle' }),
@@ -149,6 +233,7 @@ class Main extends Viewable {
     const search = new SearchInput().appendTo(this);
     Selector.appendTo(this);
     setTimeout(() => Selector.filter(search.focus().getView().value), 50);
+    new Footer().appendTo(this);
   }
 
   setIcon() {
