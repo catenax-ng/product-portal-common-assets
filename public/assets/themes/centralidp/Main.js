@@ -179,6 +179,9 @@ class SelectProvider extends Viewable {
 class Footer extends Viewable {
   constructor() {
     super();
+    const redirectUri = new URLSearchParams(window.location.search).get(
+      'redirect_uri'
+    );
     this.view = N(
       'div',
       [
@@ -189,19 +192,30 @@ class Footer extends Viewable {
             N(
               'div',
               [
-                N('a', 'Help', { class: 'footer-links', href: '/help' }),
+                N('a', 'Help', {
+                  class: 'footer-links',
+                  href: `${redirectUri}help`,
+                  target: '_blank',
+                }),
                 N('a', 'Cookie Policy', {
                   class: 'footer-links',
-                  href: '/cookiepolicy',
+                  href: `${redirectUri}cookiepolicy`,
+                  target: '_blank',
                 }),
                 N('a', 'Terms of Service', {
                   class: 'footer-links',
-                  href: '/terms',
+                  href: `${redirectUri}terms`,
+                  target: '_blank',
                 }),
-                N('a', 'Contact', { class: 'footer-links', href: '/contact' }),
+                N('a', 'Contact', {
+                  class: 'footer-links',
+                  href: `${redirectUri}contact`,
+                  target: '_blank',
+                }),
                 N('a', 'Legal notes', {
                   class: 'footer-links',
-                  href: '/thirdpartylicense',
+                  href: `${redirectUri}thirdpartylicense`,
+                  target: '_blank',
                 }),
               ],
               { class: 'footer-content-links' }
