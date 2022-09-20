@@ -4,10 +4,10 @@ body {
   padding: 0;
   max-width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url('../../images/frame/Home.png');
+  background-image: url(https://portal.dev.demo.catena-x.net/assets/images/frame/Home.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 0px;
+  background-position: center;
   text-align: center;
   overflow-x: hidden;
 }
@@ -162,6 +162,7 @@ ul > li > a {
   padding: 1rem;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  border: 1px solid lightgray;
 }
 
 .idp-card a {
@@ -169,15 +170,19 @@ ul > li > a {
   background-size: 70px 70px;
 }
 
+.footer-container {
+  margin-top: 4rem;
+}
+
 .footer-head {
-  background-image: url(../../images/frame/orange-background-head.svg);
+  background-image: url(https://portal.dev.demo.catena-x.net/assets/images/frame/orange-background-head.svg);
   height: 153px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .footer-content {
-  background-image: url(../../images/frame/orange-background-full.svg);
+  background-image: url(https://portal.dev.demo.catena-x.net/assets/images/frame/orange-background-full.svg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 200px;
@@ -196,6 +201,12 @@ ul > li > a {
   text-decoration: underline;
   cursor: pointer;
   color: black;
+}
+
+@media only screen and (min-width: 2560px) {
+  .footer-head {
+    height: 300px;
+  }
 }
 
 a.allsafe-jungfalk {

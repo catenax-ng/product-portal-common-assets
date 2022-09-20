@@ -183,7 +183,7 @@ class Footer extends Viewable {
       'redirect_uri'
     );
     this.view = N(
-      'div',
+      'footer',
       [
         N('div', null, { class: 'footer-head' }),
         N(
@@ -239,11 +239,15 @@ class Main extends Viewable {
     super();
     this.setIcon();
     //this.setStyle()
-    this.view = N('div', [
-      N('div', null, { class: 'logo' }),
-      N('div', 'Search and select', { class: 'title' }),
-      N('div', 'your compnay name to login:', { class: 'subtitle' }),
-    ]);
+    this.view = N(
+      'div',
+      [
+        N('div', null, { class: 'logo' }),
+        N('div', 'Search and select', { class: 'title' }),
+        N('div', 'your compnay name to login:', { class: 'subtitle' }),
+      ],
+      { class: 'help' }
+    );
     const search = new SearchInput().appendTo(this);
     Selector.appendTo(this);
     setTimeout(() => Selector.filter(search.focus().getView().value), 50);
