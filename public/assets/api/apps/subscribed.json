@@ -11,6 +11,16 @@
   },
   {
     "id": "ac1cf001-7fbc-1f2f-817f-bce05744000b",
+    "title": "Component Performance Monitor",
+    "provider": "Palantir",
+    "leadPictureUri": "https://portal.dev.demo.catena-x.net/assets/images/apps/ac1cf001-7fbc-1f2f-817f-bce0574c000f/PalantirCPM.png",
+    "rating": 4.5,
+    "price": "free to use",
+    "shortDescription": "Component Performance Monitor",
+    "link": "https://catena-x.palantirfoundry.com/"
+  },
+  {
+    "id": "ac1cf001-7fbc-1f2f-817f-bce05744000b",
     "title": "Project Implementation: Earth Commerce",
     "provider": "SAP",
     "leadPictureUri": "https://portal.dev.demo.catena-x.net/assets/images/samples/s008.jpg",
