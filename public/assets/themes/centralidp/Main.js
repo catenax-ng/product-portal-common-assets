@@ -264,7 +264,7 @@ class Main extends Viewable {
       [
         N('div', null, { class: 'logo' }),
         N('div', 'Search and select', { class: 'title' }),
-        N('div', 'your compnay name to login:', { class: 'subtitle' }),
+        N('div', 'your company name to login:', { class: 'subtitle' }),
       ],
       { class: 'help' }
     );
