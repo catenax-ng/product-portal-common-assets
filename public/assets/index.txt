@@ -1,3 +1,5 @@
+api/administration/user/demo/roles.json
+api/administration/user/owncompany/users.json
 api/apps/active.json
 api/apps/demo/details.json
 api/apps/f9cad59d-84b3-4880-a550-4072c26a6b93/details.json
@@ -5,6 +7,9 @@ api/apps/favorites.json
 api/apps/latest.json
 api/apps/subscribed.json
 api/news/latest.json
+api/notification/all.json
+api/notification/count.json
+api/notification/unread.json
 api/partnerNetwork/businessPartnersAPIResult.json
 api/partnerNetwork/businessPartnersDataGrid.json
 api/partnerNetwork/businessPartnersSingleDataGrid.json
@@ -32,8 +37,10 @@ fonts/static/LibreFranklin-SemiBold.ttf
 fonts/static/LibreFranklin-SemiBoldItalic.ttf
 fonts/static/LibreFranklin-Thin.ttf
 fonts/static/LibreFranklin-ThinItalic.ttf
-images/.DS_Store
-images/apps/.DS_Store
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb510/Country Risk Icon.PNG
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb510/Country Risk Ratings.PNG
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb510/Country Risk Table of Business Partners.PNG
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb510/Country Risk World Map.PNG
 images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d1/GEC_smartMOM_Auftragsdetails.png
 images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d1/GEC_smartMOM_Maschinenzustaende.png
 images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d1/GEC_smartMOM_SN_Buchung.png
@@ -45,31 +52,75 @@ images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d2/DTC-Translator_LP.svg
 images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d3/Fleet_Manager_Image1.png
 images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d3/Fleet_Manager_LP
 images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d3/Fleet_Manager_LP.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d4/Test-Image1.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d4/Test-Image2.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d4/up2parts.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d5/Smart Factory-Details1.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d5/Smart Factory-Details2.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d5/Smart Factory-Details3.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d5/Smart Factory.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d6/PP&C.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d6/Test-Image1.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d6/Test-Image2.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d7/LBN.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d7/LBN1.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d7/LBN2.png
+images/apps/5cf74ef8-e0b7-4984-a872-474828beb5d7/LBN3.png
 images/apps/7da9ce41-689f-4ac8-9065-244c75c71f57/Lead-Traceability.png
+images/apps/7da9ce41-689f-4ac8-9065-244c75c71f57/Test-Image1.png
+images/apps/7da9ce41-689f-4ac8-9065-244c75c71f57/Test-Image2.png
+images/apps/8488044e-b8df-403a-9cbd-16dad7e4a08c/AFQM_screen.jpg
+images/apps/8488044e-b8df-403a-9cbd-16dad7e4a08c/Test-Image1.png
+images/apps/8488044e-b8df-403a-9cbd-16dad7e4a08c/Test-Image2.png
 images/apps/ac1cf001-7fbc-1f2f-817f-bce0572c0007/Part Chain.png
+images/apps/ac1cf001-7fbc-1f2f-817f-bce0572c0007/Test-Image1.png
+images/apps/ac1cf001-7fbc-1f2f-817f-bce0572c0007/Test-Image2.png
 images/apps/ac1cf001-7fbc-1f2f-817f-bce0573f0009/CE_Marketplace_LP.png
+images/apps/ac1cf001-7fbc-1f2f-817f-bce0573f0009/Test-Image1.png
+images/apps/ac1cf001-7fbc-1f2f-817f-bce0573f0009/Test-Image2.png
 images/apps/ac1cf001-7fbc-1f2f-817f-bce05744000b/CE_Marketplace_Image1.png
 images/apps/ac1cf001-7fbc-1f2f-817f-bce05744000b/CE_Marketplace_Image2.png
 images/apps/ac1cf001-7fbc-1f2f-817f-bce05744000b/CE_Marketplace_Image3.png
 images/apps/ac1cf001-7fbc-1f2f-817f-bce05744000b/CE_Marketplace_LP.png
 images/apps/ac1cf001-7fbc-1f2f-817f-bce05748000d/Material Traceability.png
+images/apps/ac1cf001-7fbc-1f2f-817f-bce05748000d/STT.png
+images/apps/ac1cf001-7fbc-1f2f-817f-bce05748000d/Test-Image1.png
+images/apps/ac1cf001-7fbc-1f2f-817f-bce05748000d/Test-Image2.png
+images/apps/ac1cf001-7fbc-1f2f-817f-bce0574c000f/PalantirCPM.png
 images/apps/c7b217c5-1002-46bc-bcd2-57df0e9e46d6/Lead-Dismantler.png
+images/apps/c7b217c5-1002-46bc-bcd2-57df0e9e46d6/Test-Image1.png
+images/apps/c7b217c5-1002-46bc-bcd2-57df0e9e46d6/Test-Image2.png
 images/apps/default/lead.png
 images/apps/default/trans.png
 images/apps/demo/lead.jpg
 images/apps/f9cad59d-84b3-4880-a550-4072c26a6b93/Fraud Dash.png
+images/apps/f9cad59d-84b3-4880-a550-4072c26a6b93/Test-Image1.png
+images/apps/f9cad59d-84b3-4880-a550-4072c26a6b93/Test-Image2.png
 images/apps/f9cad59d-84b3-4880-a550-4072c26a6b93/lead.png
+images/apps/f9cad59d-84b3-4880-a550-4072c26a6b94/Test-Image1.png
+images/apps/f9cad59d-84b3-4880-a550-4072c26a6b94/Test-Image2.png
 images/apps/f9cad59d-84b3-4880-a550-4072c26a6b94/lead.png
+images/email/Catena-X long.png
+images/email/README.md
+images/frame/Home.png
 images/frame/background.svg
+images/frame/footer-background.svg
+images/frame/orange-background-full.svg
+images/frame/orange-background-head.svg
 images/icons/search.svg
 images/icons/test.svg
 images/icons/wrench.svg
+images/logos/bmw-gray.png
+images/logos/bosch-gray.png
 images/logos/cx-gray.svg
 images/logos/cx-short.svg
 images/logos/cx-text.svg
 images/logos/cx.svg
 images/logos/github.svg
-images/samples/.DS_Store
+images/logos/mercedes-benz-gray.png
+images/logos/microsoft-gray.png
+images/logos/sap-gray.png
+images/logos/siemens-gray.png
 images/samples/demo.jpg
 images/samples/s001.jpg
 images/samples/s002.jpg
@@ -88,6 +139,9 @@ index.txt
 themes/centralidp/Companies.json
 themes/centralidp/Main.css
 themes/centralidp/Main.js
+themes/centralidp/Main1.css
+themes/centralidp/Main1.js
 themes/centralidp/Resources.json
 themes/centralidp/test.html
+themes/centralidp/test1.html
 themes/centralidp/testall.html

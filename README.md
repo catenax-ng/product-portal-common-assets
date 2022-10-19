@@ -32,4 +32,3 @@ commands (bash)
     deploy-assets
 
 
-0.4.1
