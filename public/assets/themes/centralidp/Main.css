@@ -217,6 +217,9 @@ footer {
   margin: 0 10px;
 }
 
+.copy {
+  font-size: 12px;
+}
 
 .allsafe-jungfalk {
   background-image: url(https://catena-x.net/fileadmin/user_upload/logos/neu/allsafe-jungfalk-logo_grey.png);
