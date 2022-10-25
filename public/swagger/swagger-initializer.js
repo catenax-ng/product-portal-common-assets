@@ -24,5 +24,5 @@ window.onload = function() {
     scopes: 'openid profile',
     usePkceWithAuthorizationCodeGrant: 'true'
   })
-  setTimeout(selectAPI, 100)
+  setTimeout(selectAPI, 250)
 }
