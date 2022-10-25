@@ -42,7 +42,7 @@ keycloak.init({ onLoad: 'login-required' })
   }).catch((error) => warn(`sign in failed`, error)
 )
 keycloak.onTokenExpired = () => {
-  info('token expired', keycloak)
+  //info('token expired', keycloak)
   keycloak.updateToken(50)
     .then((refreshed) => {
       //info(`refreshed ${refreshed}`, keycloak)
