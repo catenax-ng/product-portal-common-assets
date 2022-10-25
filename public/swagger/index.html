@@ -33,14 +33,15 @@ const info = (message, data) => log(LogLevel.INFO, message, data)
 const warn = (message, data) => log(LogLevel.WARN, message, data)
 const error = (message, data) => log(LogLevel.ERROR, message, data)
 //info('keyclok configured', keycloak)
+
 keycloak.init({ onLoad: 'login-required' })
   .then((authenticated) => {
     username = keycloak.tokenParsed?.name
     //info(`signed in`)
     //info(`authenticated ${authenticated}`, keycloak)
     //info(`expires ${keycloak.tokenParsed && logtime(keycloak.tokenParsed.exp*1000)} ${keycloak.refreshTokenParsed && logtime(keycloak.refreshTokenParsed.exp*1000)}`)
-  }).catch((error) => warn(`sign in failed`, error)
-)
+  }).catch((error) => warn(`sign in failed`, error))
+
 keycloak.onTokenExpired = () => {
   //info('token expired', keycloak)
   keycloak.updateToken(50)
@@ -48,10 +49,9 @@ keycloak.onTokenExpired = () => {
       //info(`refreshed ${refreshed}`, keycloak)
       //info(`expires ${keycloak.tokenParsed && logtime(keycloak.tokenParsed.exp*1000)} ${keycloak.refreshTokenParsed && logtime(keycloak.refreshTokenParsed.exp*1000)}`)
     })
-    .catch(() => {
-      warn(`refresh failed`)
-    })
+    .catch((error) => warn(`refresh failed`, error))
 }
+
 const selectAPI = () => {
   const select = document.getElementById('select')
   const options = Array.from(select.childNodes)
