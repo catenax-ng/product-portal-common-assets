@@ -2,6 +2,8 @@
 
 This is an example for documentation in markdown.
 
+## Getting Started
+
 Check out these links:
 
 * Source Code https://github.com/catenax-ng/product-portal-frontend
