@@ -10,7 +10,7 @@
     "build:docker": "IMAGE=ghcr.io/catenax-ng/$npm_package_name && docker build -t $IMAGE -f .conf/Dockerfile .",
     "start:docker": "IMAGE=ghcr.io/catenax-ng/$npm_package_name && docker run --rm -d -p 8080:8080 --name cx-portal-assets $IMAGE",
     "stop:docker": "docker stop cx-portal-assets",
-    "start": "http-server --cors -p 3000"
+    "start": "cd public && http-server --cors -p 3000"
   },
   "dependencies": {
     "swagger-ui-dist": "^4.11.1"
