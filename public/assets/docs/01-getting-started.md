@@ -1,7 +1,3 @@
-# Catena-X Portal Documentation
-
-This is an example for documentation in markdown.
-
 ## Getting Started
 
 Check out these links:

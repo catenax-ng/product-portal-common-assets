@@ -22,16 +22,22 @@ body {
     flex-direction: column;
 }
 
+article h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-block-start: 0;
+}
+
 header {
     position: fixed;
-    margin: 0px auto;
+    margin: 0 auto;
     width: 1200px;
     height: 100px;
 }
 
 main {
     padding-top: 40px;
-    margin: 0px auto;
+    margin: 0 auto;
     width: 1200px;
 }
 
@@ -41,7 +47,7 @@ article, ul.sticky-table {
 }
 
 article {
-    padding: 60px;
+    padding: 40px 60px 60px 60px;
     max-width: 860px;
     margin-left: 240px;
 }
@@ -78,6 +84,7 @@ ul.sticky-table li a:active {
 }
 
 zero-md {
+    padding-top: 60px;
     margin: 0 0 80px 0;
 }
 
