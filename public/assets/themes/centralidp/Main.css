@@ -110,7 +110,7 @@ body {
   font-weight: 500;
   margin-bottom: 0.5rem;
   color: #111111;
-  font-family: LibreFranklin-Medium;
+  font-family: LibreFranklin-Medium, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .subtitle {
@@ -119,7 +119,7 @@ body {
   font-weight: 300;
   margin-bottom: 3rem;
   color: #111111;
-  font-family: LibreFranklin-Medium;
+  font-family: LibreFranklin-Medium, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul {
@@ -180,7 +180,7 @@ ul > li > a {
   font-size: 12px;
   font-weight: 500;
   color: #111111;
-  font-family: LibreFranklin-SemiBold;
+  font-family: LibreFranklin-SemiBold, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .error-container {
@@ -215,7 +215,7 @@ ul > li > a {
 }
 
 footer {
-  font-family: LibreFranklin-Medium;
+  font-family: LibreFranklin-Medium, Verdana, Geneva, Tahoma, sans-serif;
   margin-top: auto;
   text-align: center;
   padding-top: 9vw;
