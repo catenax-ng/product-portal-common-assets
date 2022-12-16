@@ -17,7 +17,21 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
+ @font-face {
+  font-family: LibreFranklin-SemiBold;
+  src: url(../../fonts/static/LibreFranklin-SemiBold.ttf);
+}
 
+@font-face {
+  font-family: LibreFranklin-Medium;
+  src: url(../../fonts/static/LibreFranklin-Medium.ttf);
+}
+
+
+@font-face {
+  font-family: LibreFranklin-Light;
+  src: url(../../fonts/static/LibreFranklin-Light.ttf);
+}
 
 body {
   margin: 0;
@@ -26,7 +40,7 @@ body {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: LibreFranklin-Medium, Verdana, Geneva, Tahoma, sans-serif;
   background-image: url(https://portal.dev.demo.catena-x.net/assets/images/frame/Home.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,16 +106,20 @@ body {
 
 .title {
   text-align: center;
-  font-size: 2.4rem;
-  font-weight: 200;
+  font-size: 56px;
+  font-weight: 500;
   margin-bottom: 0.5rem;
+  color: #111111;
+  font-family: LibreFranklin-Medium;
 }
 
 .subtitle {
   text-align: center;
-  font-size: 1.9rem;
-  font-weight: lighter;
+  font-size: 36px;
+  font-weight: 300;
   margin-bottom: 3rem;
+  color: #111111;
+  font-family: LibreFranklin-Medium;
 }
 
 ul {
@@ -144,7 +162,7 @@ ul > li > a {
   background-position: center center;
   background-image: url(https://portal.dev.demo.catena-x.net/assets/images/icons/wrench.svg);
   background-size: 70px 70px;
-  border: 1px solid lightgray;
+  border: 0px;
 }
 
 .idp-name {
@@ -154,11 +172,15 @@ ul > li > a {
   white-space: nowrap;
   width: 192px;
   background-color: white;
-  margin-top: 1rem;
+  margin-top: 0px;
   padding: 1rem;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  border: 1px solid lightgray;
+  border: 0px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #111111;
+  font-family: LibreFranklin-SemiBold;
 }
 
 .error-container {
@@ -193,7 +215,7 @@ ul > li > a {
 }
 
 footer {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: LibreFranklin-Medium;
   margin-top: auto;
   text-align: center;
   padding-top: 9vw;
