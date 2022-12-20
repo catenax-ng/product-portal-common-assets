@@ -163,6 +163,7 @@ ul > li > a {
   background-image: url(https://portal.dev.demo.catena-x.net/assets/images/icons/wrench.svg);
   background-size: 70px 70px;
   border: 0px;
+  margin-bottom: 10px;
 }
 
 .idp-name {
