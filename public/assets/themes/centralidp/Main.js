@@ -57,6 +57,20 @@ const addEvents = (node, evts) => {
     return node;
 };
 
+const getSelectedIDP = () => {
+    let idp
+    try {
+        const params = new URLSearchParams(location.search)
+        const redURI = params.get('redirect_uri')
+        const redParams = new URLSearchParams(redURI.replace(/^[^?]+/,''))
+        const alias = redParams.get('with_idp')
+        idp = CX_PROVIDERS.filter(p => p.alias === alias)[0].name
+    } catch (e) {
+        console.log(e)
+    }
+    return idp || localStorage.getItem('IDP') || ''
+}
+
 function debounce(func, timeout = 220) {
     let timer;
     return (...args) => {
@@ -84,6 +98,7 @@ class Viewable {
 }
 
 class SearchInput extends Viewable {
+
     constructor() {
         super();
         this.input = addEvents(
@@ -91,7 +106,7 @@ class SearchInput extends Viewable {
                 type: 'search',
                 class: 'search',
                 placeholder: 'Enter your company name',
-                value: localStorage.getItem('IDP') || '',
+                value: getSelectedIDP(),
             }),
             {
                 keyup: (e) => processChange(e.target.value),
